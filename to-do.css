@@ -5,38 +5,44 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Inter;
   height: 100vh;
   background: rgba(38, 38, 38, 1);
 }
 
-/* .container {
-  background-color: #202024;
-  width: 800px;
-  padding: 20px;
-  border-radius: 8px;
-} */
+/* Container for the header and input */
 .container {
-  width: 1440px;
-  height: 200px;
+  width: 100%; /* Full width */
+  max-width: 90%; /* Max width for larger screens */
+  height: 200px; /* Allow height to adjust */
   align-items: center;
   text-align: center;
   justify-content: center;
   margin: auto;
+  padding: 20px 0; /* Padding to give space */
   background: rgba(13, 13, 13, 1);
 }
 
-header .logo {
-    margin: 10px 0px 0px 0px;
-    color: #4ea8de;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    font-family: Inter;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 48.41px;
- 
+/* header .logo {
+  margin:auto;
+  color: #4ea8de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+} */
+ .text-1 {
+  margin: 10px 0px;
+  color: #4ea8de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 2.5rem; /* Responsive font size */
+  font-weight: 900;
 }
 
 .logo img {
@@ -44,23 +50,28 @@ header .logo {
   margin-right: 10px;
 }
 
+/* Input section */
 .input-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  /* Adjusted for responsiveness */
+}
+.input-f{
+  margin: 126px 0px 15px 0px;
 }
 
 .input-field {
-  width: 600px;
-  height: 40px;
+  width: 70%; /* Takes 70% of the available space */
+  max-width: 736px;
+  height: 54px;
   padding: 10px;
   background-color: #29292e;
   border: none;
   border-radius: 8px;
   color: #e1e1e6;
-  font-size: 16px;
-  margin-right: 10px;
+  font-size: 1rem;
+  margin-right: 1%; /* Add some space between input and button */
 }
 
 #add-task {
@@ -68,17 +79,20 @@ header .logo {
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 0 20px;
-  font-size: 16px;
+  padding: 0 2%;
+  font-size: 1rem;
   cursor: pointer;
-  margin-left: 8px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #add-task img {
   margin-left: 5px;
 }
 
+/* Task info section */
 .task-info {
   display: flex;
   justify-content: space-between;
@@ -86,25 +100,25 @@ header .logo {
 }
 
 .task-info h3 {
-  font-size: 18px;
+  font-size: 1.125rem; /* Responsive font size */
   color: #4ea8de;
 }
+
 .output-box {
   margin: 60px;
 }
 
 .output-f {
   background: rgba(38, 38, 38, 1);
-  width: 736px;
-  height: 451px;
-  padding: 0pxpx;
+  width: 80%; /* Takes 80% of the available space */
+  max-width: 736px; /* Limit maximum width */
+  padding: 20px;
   border-radius: 8px;
-  text-align: center;
-  display:list-item;
   margin: auto;
   text-align: center;
- 
 }
+
+/* Task count and completed count */
 .task-count,
 .completed-count {
   background-color: #333;
@@ -115,6 +129,7 @@ header .logo {
   color: #e1e1e6;
 }
 
+/* Task list styling */
 .task-list {
   display: flex;
   flex-direction: column;
@@ -123,7 +138,7 @@ header .logo {
 
 .task-item {
   background-color: #29292e;
-  padding: 15px;
+  padding: 2%;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -136,6 +151,144 @@ header .logo {
   color: #e1e1e6;
 }
 
+/* Checkbox styling */
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Container for the header and input */
+.container {
+  width: 100%; /* Full width of the viewport */
+  max-width: 90%; /* Limits width on larger screens */
+  height: 200px; /* Adjusts height to content */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgba(13, 13, 13, 1);
+  padding: 20px 0; /* Adds padding for better spacing */
+}
+
+header .logo {
+  margin: 10px 0 0 0;
+  color: #4ea8de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 2.5rem; /* Scales with screen size */
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.logo img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; /* Adjusted for responsiveness */
+}
+
+.input-field-11 {
+  width: 70%; 
+  max-width: 600px;
+  height: 40px;
+  padding: 10px;
+  background-color: #29292e;
+  border: none;
+  border-radius: 8px;
+  color: #e1e1e6;
+  font-size: 1rem;
+  margin-right: 1%; 
+}
+
+#add-task {
+  background-color: #4ea8de;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 2%;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-task img {
+  margin-left: 5px;
+}
+
+/* Task info section */
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-info h3 {
+  font-size: 1.125rem; /* Responsive font size */
+  color: #4ea8de;
+}
+
+.output-box {
+  margin: 60px;
+}
+
+.output-f {
+  background: rgba(38, 38, 38, 1);
+  width: 80%; /* Takes 80% of the available space */
+  max-width: 736px; /* Limit maximum width */
+  padding: 20px;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Task count and completed count */
+.task-count,
+.completed-count {
+  background-color: #333;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #e1e1e6;
+}
+
+/* Task list styling */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  background-color: #29292e;
+  padding: 2%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item label {
+  margin-left: 10px;
+  flex: 1;
+  color: #e1e1e6;
+}
+
+/* Checkbox styling */
 .checkbox {
   appearance: none;
   width: 20px;
@@ -145,26 +298,73 @@ header .logo {
   background-color: transparent;
   cursor: pointer;
   position: relative;
+
 }
 
 .checkbox:checked {
-  background-color: #141414;
+  background-color: #4ea8de;
 }
 
 .checkbox:checked::before {
-  content:url(img/Vector.png);
+  content: url(img/Vector.png);
   position: absolute;
-  top: 4px;
-  left: 4px;
-  margin: 0px;
-  padding: 0px;
+  top: 1px;
+  left: 3px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  background-color: #1277bf;
 }
 
+/* Trash icon styling */
 .trash-icon {
   width: 20px;
   cursor: pointer;
+}
+
+/* Trash icon styling */
+.trash-icon {
+  width: 20px;
+  cursor: pointer;
+}
+/* .list{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} */
+
+.styled-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;  /* Remove underline */
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-button:hover {
+  background-color: #45a049; /* Darken on hover */
+  cursor: pointer;
+}
+
+.styled-button:active {
+  background-color: #39843c; /* Darker when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 2px #80d4ff;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
 }
