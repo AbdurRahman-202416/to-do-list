@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 100%; /* Full width */
-  max-width: 90%; /* Max width for larger screens */
+  max-width: 100%; /* Max width for larger screens */
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -25,6 +25,7 @@ body {
   height: 200px;
   padding: 20px 0px 0px 0px ; /* Padding to give space */
   background: rgba(13, 13, 13, 1);
+  margin-top: 0px;
 }
 
 /* Title and rocket icon */
@@ -208,7 +209,8 @@ p {
   }
 
   .img-roket {
-    width: 30px;
+    width: 20px;
+    height: 30px;
   }
 
   .input-f {
