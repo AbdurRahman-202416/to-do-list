@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=q6OKDrR6BxFR&format=png&color=000000" type="x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -12,15 +11,15 @@
     <link rel="stylesheet" href="to-do.css" />
     <title>Todo App</title>
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1 class="logo text-1">
-          <img class="img-roket" src="img/rocket.svg" alt="logo" /> todo
+  <body id="body">
+    <div class="container" id="container">
+      <header id="header">
+        <h1 class="logo text-1" id="logo">
+          <img class="img-roket" src="img/rocket.svg" alt="logo" id="logo-icon" /> todo
         </h1>
       </header>
-      <div class="input-f">
-        <div class="input-section">
+      <div class="input-f" id="input-section">
+        <div class="input-section" id="input-wrapper">
           <input
             class="input-field"
             type="text"
@@ -28,78 +27,61 @@
             id="task-input"
           />
           <button type="submit" id="add-task">
-            Criar <img src="img/plus.png" height="13px" alt="add task" />
+            Criar <img src="img/plus.png" height="13px" alt="add task" id="add-icon" />
           </button>
         </div>
       </div>
     </div>
 
-    <div class="output-box"></div>
-    <div class="output-f">
-      <div class="task-info">
-        <h3>Tarefas criadas <span class="task-count">5</span></h3>
-        <h3 style="color: rgba(130, 132, 250, 1)">
-          Concluídas <span class="completed-count">2 de 5</span>
+    <div class="output-box" id="output-box"></div>
+    <div class="output-f" id="output-form">
+      <div class="task-info" id="task-info">
+        <h3 id="created-tasks-header">Tarefas criadas <span class="task-count" id="task-count">5</span></h3>
+        <h3 style="color: rgba(130, 132, 250, 1)" id="completed-tasks-header">
+          Concluídas <span class="completed-count" id="completed-count">2 de 5</span>
         </h3>
       </div>
       <br style="margin: 20px" />
+      <hr
+      style="margin: 0px 0px 16px 0px; padding: 0px; color: rgb(22, 23, 23)"
+    />
 
-      <div class="task-list">
-        <div class="task-item">
+      <div class="task-list" id="task-list">
+        <div class="task-item" id="task-item-1">
           <input type="checkbox" id="task-1" class="checkbox" />
-          <label for="task-1"
-            >Integer urna interdum massa libero auctor neque turpis turpis
-            semper.</label
-          >
-          <img src="img\Layer 1.png" alt="delete" class="trash-icon" />
+          <label for="task-1">Integer urna interdum massa libero auctor neque turpis turpis semper.</label>
+          <img src="img/Layer 1.png" alt="delete" class="trash-icon" id="delete-icon-1" />
         </div>
 
-        <div class="task-item">
+        <div class="task-item" id="task-item-2">
           <input type="checkbox" id="task-2" class="checkbox" />
-          <label for="task-2"
-            >Integer urna interdum massa libero auctor neque turpis turpis
-            semper.</label
-          >
-          <img src="img\Layer 1.png" alt="delete" class="trash-icon" />
+          <label for="task-2">Integer urna interdum massa libero auctor neque turpis turpis semper.</label>
+          <img src="img/Layer 1.png" alt="delete" class="trash-icon" id="delete-icon-2" />
         </div>
 
-        <div class="task-item">
+        <div class="task-item" id="task-item-3">
           <input type="checkbox" id="task-3" class="checkbox" />
-          <label for="task-3"
-            >Integer urna interdum massa libero auctor neque turpis turpis
-            semper.</label
-          >
-          <img src="img\Layer 1.png" alt="delete" class="trash-icon" />
+          <label for="task-3">Integer urna interdum massa libero auctor neque turpis turpis semper.</label>
+          <img src="img/Layer 1.png" alt="delete" class="trash-icon" id="delete-icon-3" />
         </div>
 
-        <div class="task-item">
+        <div class="task-item" id="task-item-4">
           <input type="checkbox" id="task-4" class="checkbox" checked />
-
-          <label for="task-4">
-            <strike
-              >Integer urna interdum massa libero auctor neque turpis turpis
-              semper.</strike
-            ></label
-          >
-          <img src="img\Layer 1.png" alt="delete" class="trash-icon" />
+          <label for="task-4"><strike>Integer urna interdum massa libero auctor neque turpis turpis semper.</strike></label>
+          <img src="img/Layer 1.png" alt="delete" class="trash-icon" id="delete-icon-4" />
         </div>
 
-        <div class="task-item">
+        <div class="task-item" id="task-item-5">
           <input type="checkbox" id="task-5" class="checkbox" checked />
-
-          <label for="task-4">
-            <strike
-              >Integer urna interdum massa libero auctor neque turpis turpis
-              semper.
-            </strike></label
-          >
-
-          <img src="img\Layer 1.png" alt="delete" class="trash-icon" />
+          <label for="task-5"><strike>Integer urna interdum massa libero auctor neque turpis turpis semper.</strike></label>
+          <img src="img/Layer 1.png" alt="delete" class="trash-icon" id="delete-icon-5" />
         </div>
       </div>
     </div>
-    <div class="list">
-      <a href="index.html" class="styled-button">Back to Home</a>
+    <div class="list" id="list">
+      <a href="index.html" class="styled-button" id="back-home">Back to Home</a>
     </div>
+
+    <script src="toDo.js"></script>
   </body>
 </html>

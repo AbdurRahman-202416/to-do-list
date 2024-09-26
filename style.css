@@ -89,8 +89,8 @@ body {
 /* Output area */
 .output-f {
   /* background-color: #333333; */
-  width: 60%;
-  height: 287px;
+  width: 70%;
+  height: 100vh;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -99,9 +99,11 @@ body {
 
 .output-list {
   display: flex;
+  color: #4ea8de;
   justify-content: space-between;
   margin-bottom: 20px;
   color: #fff;
+  
 }
 
 .no-tasks {
@@ -144,16 +146,21 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #262626;
+  /* background-color: #262626; */
   padding: 10px;
   border-radius: 8px;
   color: #808080;
 }
 
 .task-item label {
+  text-align: left;
   flex-grow: 1;
   margin-left: 1rem;
-  color: #fff;
+  color: #4ea8de;
+  padding: 5px;
+  margin: 0px;
+  gap: 10px;
+  font-size: 1.7rem;
 }
 
 .task-item .trash-icon {
