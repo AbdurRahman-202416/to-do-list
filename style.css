@@ -53,7 +53,12 @@ body {
   align-items: center;
   gap: 8px;
 }
-
+.link-page{
+  text-decoration: none; 
+  color: #3498db; 
+  
+  
+}
 .input-field {
   width: 60%; /* 60% of the screen width */
   height: 50px;
@@ -103,7 +108,7 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   color: #fff;
-  
+
 }
 
 .no-tasks {
