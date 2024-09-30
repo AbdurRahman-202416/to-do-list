@@ -218,7 +218,7 @@ p {
 .output-list{
   display: flex;
   justify-content: space-between;
-  max-width: 70%;
+  max-width: 100%;
   text-align: center;
   font-size: 1rem;
 }

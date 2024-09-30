@@ -38,10 +38,12 @@ const renderCategories = () => {
 
   categories.forEach((categoryItem, index) => {
     const taskElement = document.createElement("div");
+    taskElement.className="output-list";
     const completedTasks = categoryItem.tasks.filter(task => task.completed).length;
 
     taskElement.innerHTML = `
-      <div class="output-list">
+  
+     
         <h3 class="cout-text" style="color: #4ea8de">
           <a class="link-page" href="to-do.html?id=${categoryItem.id}">
             ${categoryItem.id}. ${categoryItem.name} <span class="task-count">${categoryItem.tasks.length}</span>
@@ -50,8 +52,13 @@ const renderCategories = () => {
         <h3 class="cout-text" style="color: rgba(130, 132, 250, 1)">
           Concluídas <span class="completed-count">${completedTasks}</span>
         </h3>
-      </div>
+    
+     
     `;
+
+
+    
+
 
     outputBox.appendChild(taskElement);
   });
