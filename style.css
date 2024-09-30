@@ -195,16 +195,17 @@ p {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .container {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     height: 200px;
   }
 .output-list{
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 100%;
   text-align: center;
   font-size: 0.8rem;
+  
 
 }
   .text-1 {
