@@ -58,6 +58,7 @@ body {
 }
 
 .input-field {
+  box-shadow: 6px 9px 5px rgb(0 0 0 / 71%);
   width: 70%;
   max-width: 736px;
   height: 50px;
@@ -73,7 +74,7 @@ body {
 #add-task {
   background-color: #4ea8de;
   color: white;
-  border: none;
+  
   border-radius: 8px;
   padding: 0 20px;
   font-size: 1rem;
@@ -82,6 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #65626278;
 }
 
 #add-task img {

@@ -60,6 +60,7 @@ body {
   
 }
 .input-field {
+  box-shadow: 6px 9px 5px rgb(0 0 0 / 71%);
   width: 60%; /* 60% of the screen width */
   height: 50px;
   padding: 0 15px;
@@ -93,21 +94,24 @@ body {
 }
 /* Output area */
 .output-f {
-  /* background-color: #333333; */
-  width: 70%;
-  height: 100vh;
+  width: 90%;
+  height: auto;
   padding: 20px;
   border-radius: 8px;
-  text-align: center;
   margin: 30px auto; /* Center with margin */
 }
 
 .output-list {
+  height: 35px;
+  padding: 4px 15px;
   display: flex;
-  color: #4ea8de;
+  border: 1px solid #040202;
+  border-radius: 5px;
   justify-content: space-between;
   margin-bottom: 20px;
   color: #fff;
+  text-align: left;
+ 
   box-shadow:1px 2px 4px rgba(0, 0, 0, 0.5)
 
 }
@@ -152,7 +156,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: #262626; */
+
   padding: 10px;
   border-radius: 8px;
   color: #808080;
@@ -200,6 +204,7 @@ p {
     height: 200px;
   }
 .output-list{
+  height: 35px;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -236,6 +241,7 @@ p {
   }
 
   .output-f {
+    text-align:justify;
     width: 90%;
     padding: 10px;
   }

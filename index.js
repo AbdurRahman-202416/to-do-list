@@ -15,7 +15,7 @@ const addCategory = () => {
     alert("Enter task name");
     return;
   }
-  
+
   const category = {
     id: categories.length + 1,
     name: nameText,
@@ -26,7 +26,7 @@ const addCategory = () => {
   nameInput.value = ""; // Clear the input field
 
   renderCategories();
-  
+
   // Save categories to localStorage
   localStorage.setItem("categories", JSON.stringify(categories));
 };
@@ -38,8 +38,10 @@ const renderCategories = () => {
 
   categories.forEach((categoryItem, index) => {
     const taskElement = document.createElement("div");
-    taskElement.className="output-list";
-    const completedTasks = categoryItem.tasks.filter(task => task.completed).length;
+    taskElement.className = "output-list";
+    const completedTasks = categoryItem.tasks.filter(
+      (task) => task.completed
+    ).length;
 
     taskElement.innerHTML = `
   
@@ -55,10 +57,6 @@ const renderCategories = () => {
     
      
     `;
-
-
-    
-
 
     outputBox.appendChild(taskElement);
   });
